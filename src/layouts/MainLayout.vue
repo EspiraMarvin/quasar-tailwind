@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <div class="bg-white tw-flex tw-items-center tw-gap-3">
+    <q-header>
+<!--      <div class="bg-white tw-flex tw-items-center tw-gap-3 tw-wrap">
         <div class="tw-mr-1">
           <q-btn
             class="tw-left-2"
@@ -75,7 +75,7 @@
             </q-btn-dropdown>
           </div>
         </div>
-      </div>
+      </div>-->
     </q-header>
 
     <q-drawer
@@ -107,7 +107,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
-import Search from "components/Search";
+// import Search from "components/Search";
 const linksData = [
   {
     title: 'Docs',
@@ -155,7 +155,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink, Search},
+  components: { EssentialLink },
   data () {
     return {
       image: 'https://cdn.quasar.dev/img/avatar2.jpg',

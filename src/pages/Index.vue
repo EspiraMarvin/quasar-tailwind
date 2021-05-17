@@ -1,5 +1,6 @@
 <template>
   <q-page class="tw-mt-2 tw-font-sans">
+    <Navigation />
     <div class="tw-bg-gray-300 tw-dark:bg-gray-800 tw-rounded-xl tw-mx-10 tw-px-10 tw-flex-wrap">
       <span class="tw-text-gray-900 tw-font-semibold tw-text-2xl">Dark mode is here!</span>
       <p class="tw-text-red-600 tw-dark:text-gray-800">
@@ -25,10 +26,11 @@
 
 <script>
 import Try from "components/Try";
-import Nav from "components/Nav";
+import Navigation from "components/Navigation";
 export default {
   name: 'PageIndex',
   components: {
+    Navigation,
     Try
   }
 }
