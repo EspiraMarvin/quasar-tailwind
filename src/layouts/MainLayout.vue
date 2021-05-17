@@ -1,16 +1,17 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <div class="bg-white tw-flex tw-items-center">
-        <div class="tw-mr--1">
+      <div class="bg-white tw-flex tw-items-center tw-gap-3">
+        <div class="tw-mr-1">
           <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          color="primary"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
+            class="tw-left-2"
+            flat
+            dense
+            round
+            icon="menu"
+            color="primary"
+            aria-label="Menu"
+            @click="leftDrawerOpen = !leftDrawerOpen"
         />
         </div>
         <div class="tw-w-2/3">
@@ -28,11 +29,17 @@
             size="md"
           />
         </div>
-        <div class="tw-w-32">
-          <q-btn-dropdown rounded color="bg-white text-black" class="tw-font-light" label="English" no-caps>
-            <q-list class="tw-font-light">
+        <div class="tw-w-32 tw-flex">
+          <q-btn-dropdown
+            color="bg-white text-black" class="tw-font-light"
+            label="English"
+            rounded
+            no-caps
+            dropdown-icon="expand_more"
+          >
+            <q-list separator bordered class="tw-font-light">
               <q-item clickable class="tw-flex-col tw-items-center tw-rounded-md hover:tw-bg-gray-200" exact v-close-popup @click="onItemClick">
-                  <q-item-label class="tw-mt-2">French</q-item-label>
+                  <q-item-label class="tw-pt-2">French</q-item-label>
               </q-item>
               <q-item clickable class="tw-flex-col tw-items-center tw-rounded-md hover:tw-bg-gray-200" exact v-close-popup @click="onItemClick">
                   <q-item-label class="tw-mt-2">German</q-item-label>
@@ -45,7 +52,29 @@
           <q-icon name="eva-bell-outline" class="" size="md" color="" style="color: #828282" />
         </div>
 
-        <span class="tw-text-black">Quasar v{{ $q.version }}</span>
+        <div class="tw-flex tw-items-center tw-px-4 tw-text-black tw-bordered-md">
+          <div class="tw-h-30">
+            <q-btn-dropdown
+              class="tw-font-light tw-py-2 tw-my-2"
+              color="bg-white text-black"
+              label="User Name"
+              caption="user"
+              rounded
+              no-caps
+              dropdown-icon="expand_more"
+            >
+              <q-list bordered class="tw-font-light">
+                <q-item clickable class="tw-flex-col tw-items-center tw-rounded-md hover:tw-bg-gray-200" exact v-close-popup @click="onItemClick">
+                  <q-item-label class="tw-pt-2">Settings</q-item-label>
+                </q-item>
+                <q-separator />
+                <q-item clickable class="tw-flex-col tw-items-center tw-rounded-md hover:tw-bg-gray-200" exact v-close-popup @click="onItemClick">
+                  <q-item-label class="tw-mt-2">Logout</q-item-label>
+                </q-item>
+              </q-list>
+            </q-btn-dropdown>
+          </div>
+        </div>
       </div>
     </q-header>
 
@@ -129,6 +158,7 @@ export default {
   components: { EssentialLink, Search},
   data () {
     return {
+      image: 'https://cdn.quasar.dev/img/avatar2.jpg',
       leftDrawerOpen: false,
       essentialLinks: linksData
     }
@@ -137,7 +167,5 @@ export default {
 </script>
 
 <style scoped>
-.my-item:hover {
-  background-color: red;
-}
+
 </style>
