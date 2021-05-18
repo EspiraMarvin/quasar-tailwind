@@ -6,6 +6,9 @@
       <p class="tw-text-red-600 tw-dark:text-gray-800">
         Lorem ipsum...
       </p>
+      <div class="tw-sr-only">
+        This is not visible
+      </div>
     </div>
 
     <div class="tw-flex tw-relative">
