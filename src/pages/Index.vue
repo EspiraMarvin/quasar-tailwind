@@ -1,10 +1,18 @@
 <template>
   <q-page class="tw-mt-2 tw-font-sans">
-    <Navigation />
+
+    <div class="tw-pl-12 tw-mt-10 tw-text-lg tw-font-semibold" style="color: #ffa14e">
+      👋️ Hey User
+    </div>
+
+    <div class="tw-pl-12 tw-mt-4 tw-text-2xl tw-font-bold">
+      Your dummy dashboard
+    </div>
+
     <div class="tw-bg-gray-300 tw-dark:bg-gray-800 tw-rounded-xl tw-mx-10 tw-px-10 tw-flex-wrap">
       <span class="tw-text-gray-900 tw-font-semibold tw-text-2xl">Dark mode is here!</span>
-      <p class="tw-text-red-600 tw-dark:text-gray-800">
-        Lorem ipsum...
+      <p class="tw-text-red-600 tw-dark:text-gray-800 ellipsis">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis, nihil quidem reiciendis tenetur veritatis! Cumque cupiditate eius et excepturi maiores perspiciatis placeat recusandae? A, ab animi consequatur cupiditate earum eligendi error eum eveniet ex, facere fuga id, impedit ipsa iure labore laboriosam magnam nulla pariatur reiciendis saepe sequi sunt?`
       </p>
       <div class="tw-sr-only">
         This is not visible
@@ -29,11 +37,9 @@
 
 <script>
 import Try from "components/Try";
-import Navigation from "components/Navigation";
 export default {
   name: 'PageIndex',
   components: {
-    Navigation,
     Try
   }
 }

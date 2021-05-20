@@ -1,8 +1,8 @@
 <template>
-  <div class="tw-text-black">
+  <div>
     <q-input
     placeholder="Search"
-    class="q-ma-xs q-ml-xs-xs bg-white col-xs-9 col-sm-10 col-md-11 tw-rounded-3xl"
+    class="q-ma-xs q-ml-xs-xs col-xs-9 col-sm-10 col-md-11 tw-rounded-3xl tw-text-black bg-grey-1"
     outlined
     rounded
     dense

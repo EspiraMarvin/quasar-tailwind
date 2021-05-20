@@ -18,6 +18,8 @@
     "quasar": "^1.0.0"
   },
   "devDependencies": {
+    "@headlessui/vue": "^1.2.0",
+    "@heroicons/vue": "^1.0.1",
     "@quasar/app": "^2.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^7.21.0",
