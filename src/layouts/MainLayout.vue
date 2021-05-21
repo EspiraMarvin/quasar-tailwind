@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header>
-      <div class="tw-flex tw-items-center tw-justify-start tw-pt-2 tw-w-auto tw-gap-4 bg-grey-1">
+      <div class="tw-flex tw-items-center tw-justify-start tw-py-1 tw-gap-4 bg-grey-1">
         <div class="tw-mr-1">
           <q-btn
             class="tw-left-2 md:tw-hidden"
@@ -14,31 +14,32 @@
             @click="leftDrawerOpen = !leftDrawerOpen"
         />
         </div>
-        <div class="tw-w-2/3">
+        <div class="tw-w-1/2">
           <Search  />
         </div>
 
-        <div class="tw-w-30">
+        <div class="tw-flex tw-items-center tw-justify-start tw-w-1/2 tw-gap-16">
+          <div class="tw-w-30">
           <q-toggle
             :false-value="this.$q.dark.set(theme)"
             :true-value="this.$q.dark.set(theme)"
             v-model="theme"
             :icon="$q.dark.isActive ? '' : ''"
             color="green"
-            class="tw-text-gray-700"
+            class="tw-text-gray-700 tw-text-lg"
             label="Live"
             size="md"
           />
         </div>
 
-        <div>
+          <div class="">
         <q-btn-dropdown
-            class="tw-font-normal tw-leading-5 tw-text-gray-700 tw-bg-gray-100"
+            class="tw-font-normal tw-leading-5 tw-text-gray-700 tw-py-1 tw-bg-gray-100"
             label="English"
             rounded
             unelevated
             no-caps
-            size="16px"
+            size="18px"
             dropdown-icon="expand_more"
         >
             <q-list separator bordered class="tw-font-light">
@@ -51,12 +52,14 @@
             </q-list>
           </q-btn-dropdown>
         </div>
-        <div class="">
-          <q-icon name="eva-bell-outline" class="" size="md" color="" style="color: #828282" />
+
+          <div class="">
+          <q-icon name="eva-bell-outline" class="" size="36px" color="" style="color: #828282" />
         </div>
 
-        <div class="">
-          <ProfileTwo />
+          <div class="tw-w-1/4">
+         <ProfileTwo />
+        </div>
         </div>
       </div>
     </q-header>
@@ -144,15 +147,11 @@ export default {
     return {
       image: 'https://cdn.quasar.dev/img/avatar2.jpg',
       leftDrawerOpen: false,
-      essentialLinks: linksData,
-      displaySettingsMenu: false
+      essentialLinks: linksData
     }
   },
   methods: {
-    toggleSettingsPopover: function () {
-      this.displaySettingsMenu = !this.displaySettingsMenu
     }
-  }
 }
 </script>
 
