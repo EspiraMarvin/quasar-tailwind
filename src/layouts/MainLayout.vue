@@ -34,12 +34,12 @@
 
           <div class="">
         <q-btn-dropdown
-            class="tw-font-normal tw-leading-5 tw-text-gray-700 tw-py-1 tw-bg-gray-100"
+            class="tw-font-normal tw-leading-5 tw-py-1 tw-text-gray-700 tw-bg-gray-100"
             label="English"
             rounded
             unelevated
             no-caps
-            size="18px"
+            size="17px"
             dropdown-icon="expand_more"
         >
             <q-list separator bordered class="tw-font-light">
@@ -54,7 +54,8 @@
         </div>
 
           <div class="">
-          <q-icon name="eva-bell-outline" class="" size="36px" color="" style="color: #828282" />
+<!--            <q-tab alert name="movies" icon="movie" label="Movies" style="color: red" />-->
+            <q-icon name="eva-bell-outline" class="" size="36px" color="" style="color: #828282" />
         </div>
 
           <div class="tw-w-1/4">
@@ -70,19 +71,20 @@
       bordered
       content-class="bg-grey-1"
     >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+      <div>
+        <template>
+          <div class="tw-flex tw-items-center tw-justify-start tw-font-semibold tw-text-4xl tw-ml-5 tw-mt-7 tw-leading-5" style="color: #484a4f; margin-left: 18px">Test</div>
+        </template>
+      </div>
+
+<!--      <q-scroll-area
+        :thumb-style="this.thumbStyle"
+        :style="{height: '490px'}"
+      >-->
+        <EssentialLink />
+
+<!--      </q-scroll-area>-->
+
     </q-drawer>
 
     <q-page-container>
@@ -92,9 +94,10 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import commonMixins from "src/mixins/commonMixins";
 import Search from "components/Search";
 import ProfileTwo from "components/ProfileTwo";
+import EssentialLink from "components/navigations/EssentialLink";
 const linksData = [
   {
     title: 'Docs',
@@ -142,7 +145,8 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: {ProfileTwo, EssentialLink, Search },
+  components: {EssentialLink, ProfileTwo, Search },
+  mixins: [commonMixins],
   data () {
     return {
       image: 'https://cdn.quasar.dev/img/avatar2.jpg',
