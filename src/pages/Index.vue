@@ -10,14 +10,31 @@
         <div class="tw-pl-4 md:tw-pl-10 tw-mt-3 tw-text-2xl tw-font-bold">
           Your dummy dashboard
         </div>
-        <div class="tw-mt-10">
-          graph components
+<!--        <div class="tw-mt-10 tw-grid tw-cols-4 tw-gap-8 tw-mx-6 tw-h-96">-->
+        <div class="row tw-px-8 tw-gap-4">
+<!--          <div class="tw-col-span-4 tw-bg-gray-300">-->
+          <div class="col-12 tw-bg-gray-300">
+          Bar Chart
+            <RadialBar />
+          </div>
+<!--          <div class="tw-col-span-1 bg-white">-->
+          <div class="col-5 bg-white">
+            Pie Chart
+            <RadialBar />
+          </div>
+          <q-space/>
+<!--          <div class="tw-col-span-1 bg-white">-->
+          <div class="col-5 bg-white">
+            Bar Graph
+            <RadialBar />
+          </div>
         </div>
       </div>
       <div class="tw-col-start-5 tw-col-end-7 md:tw-pl-4 lg:tw-pl-4 xl:tw-pl-28">
         <div style="border-top-left-radius: 80px; background: #f9f9f9">
-          <div class="tw-flex tw-justify-center tw-pt-10 tw-px-8 tw-leading-tight tw-font-semibold">
+          <div class="tw-flex tw-justify-center tw-pt-10 tw-px-8 tw-leading-5 tw-font-semibold">
             <q-tabs
+              dense
               v-model="tab"
               indicator-color="grey"
               class="tw-text-gray-500"
@@ -30,6 +47,7 @@
             </q-tabs>
           </div>
 
+<!--          separator-->
           <q-separator class="tw-mt-2 tw-gray-100 tw-mx-10" />
 
           <q-scroll-area style="height:650px" :thumb-style="this.thumbStyle" >
@@ -57,11 +75,13 @@
 
 <script>
 import MessageCard from "components/MessageCard";
+import RadialBar from "components/Graphs/RadialBar";
 import commonMixins from "src/mixins/commonMixins";
 export default {
   name: 'PageIndex',
   components: {
-    MessageCard
+    MessageCard,
+    RadialBar
   },
   mixins: [commonMixins],
   data () {

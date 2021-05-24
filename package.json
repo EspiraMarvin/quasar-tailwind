@@ -14,8 +14,11 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "apexcharts": "^3.26.0",
     "core-js": "^3.6.5",
-    "quasar": "^1.0.0"
+    "quasar": "^1.0.0",
+    "vue": "latest",
+    "vue-apexcharts": "^1.6.0"
   },
   "devDependencies": {
     "@headlessui/vue": "^1.2.0",
