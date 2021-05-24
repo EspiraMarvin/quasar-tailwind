@@ -40,8 +40,8 @@
               class="tw-text-gray-500"
               active-color="black"
             >
-              <div class="tw-flex tw-gap-20 md:tw-gap-10 lg:tw-gap-24">
-                <q-tab name="stats" label="Stats" no-caps :ripple="false" class="tw-ml-0 md:tw-ml-1 lg:tw-ml-4" />
+              <div class="tw-flex tw-gap-24 md:tw-gap-10 lg:tw-gap-24">
+                <q-tab name="stats" label="Stats" no-caps :ripple="false" class="tw--ml-2 md:tw--ml-4 lg:tw-ml-4" />
                 <q-tab name="messages" label="Messages" no-caps  :ripple="false" />
               </div>
             </q-tabs>
