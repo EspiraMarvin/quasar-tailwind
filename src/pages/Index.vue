@@ -1,8 +1,8 @@
 <template>
   <q-page class="tw-mt-2 tw-font-sans">
 
-    <div class="tw-grid tw-grid-cols-6 tw-gap-4 tw-py-3">
-      <div class="tw-col-start-1 tw-col-end-5 tw-bg-indigo-50">
+    <div class="tw-grid tw-grid-rows-2 md:tw-grid-cols-6 tw-gap-4 tw-py-3">
+      <div class="grid-rows-3 md:tw-col-start-1 md:tw-col-end-5 tw-bg-indigo-50">
         <div class="tw-pl-4 md:tw-pl-10 tw-mt-3 tw-text-lg tw-font-semibold" style="color: #ffa14e">
           👋️ Hey User
         </div>
@@ -10,27 +10,27 @@
         <div class="tw-pl-4 md:tw-pl-10 tw-mt-3 tw-text-2xl tw-font-bold">
           Your dummy dashboard
         </div>
-<!--        <div class="tw-mt-10 tw-grid tw-cols-4 tw-gap-8 tw-mx-6 tw-h-96">-->
-        <div class="row tw-px-8 tw-gap-4">
-<!--          <div class="tw-col-span-4 tw-bg-gray-300">-->
-          <div class="col-12 tw-bg-gray-300">
+        <div class="md:tw-grid md:tw-cols-4 md:tw-mt-10 md:tw-gap-y-8 md:tw-gap-x-10 md:tw-h-96">
+<!--        <div class="row tw-px-8 tw-gap-y-4">-->
+          <div class="md:tw-col-span-3 md:tw-bg-gray-300">
+<!--          <div class="col-xs-12 tw-bg-gray-300">-->
           Bar Chart
             <RadialBar />
           </div>
-<!--          <div class="tw-col-span-1 bg-white">-->
-          <div class="col-5 bg-white">
+          <div class="tw-col-start-1 tw-col-end-2 bg-amber-1">
+<!--          <div class="col-xs-6 bg-white">-->
             Pie Chart
             <RadialBar />
           </div>
-          <q-space/>
-<!--          <div class="tw-col-span-1 bg-white">-->
-          <div class="col-5 bg-white">
+<!--          <q-space/>-->
+          <div class="tw-col-start-2 tw-col-end-4 bg-purple-2">
+<!--          <div class="col-xs-6 bg-white">-->
             Bar Graph
             <RadialBar />
           </div>
         </div>
       </div>
-      <div class="tw-col-start-5 tw-col-end-7 md:tw-pl-4 lg:tw-pl-4 xl:tw-pl-28">
+      <div class="md:tw-col-start-5 md:tw-col-end-7 md:tw-pl-4 lg:tw-pl-4 xl:tw-pl-28">
         <div style="border-top-left-radius: 80px; background: #f9f9f9">
           <div class="tw-flex tw-justify-center tw-pt-10 tw-px-8 tw-leading-5 tw-font-semibold">
             <q-tabs
