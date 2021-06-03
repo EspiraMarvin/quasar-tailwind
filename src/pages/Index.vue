@@ -1,8 +1,8 @@
 <template>
   <q-page class="tw-mt-2 tw-font-sans">
 
-    <div class="tw-grid md:tw-grid lg:tw-grid tw-grid-rows-1 md:tw-grid-rows-1 xl:tw-gap-4 tw-py-3">
-      <div class="lg:tw-col-span-6 lg:tw-col-start-1 lg:tw-col-end-5">
+    <div class="tw-grid md:tw-grid lg:tw-grid tw-grid-rows-1 md:tw-grid-rows-1 tw-gap-2 md:tw-gap-0 tw-py-3">
+      <div class="md:tw-col-span-6 md:tw-col-start-1 md:tw-col-end-4 lg:tw-col-end-5">
         <div class="tw-pl-4 md:tw-pl-1 lg:tw-pl-8 tw-mt-3 tw-text-lg tw-font-semibold" style="color: #ffa14e">
           👋️ Hey User
         </div>
