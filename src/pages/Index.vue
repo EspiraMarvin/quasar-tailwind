@@ -1,30 +1,30 @@
 <template>
   <q-page class="tw-mt-2 tw-font-sans">
 
-    <div class="tw-grid tw-grid-rows-2 md:tw-grid-cols-6 tw-gap-4 tw-py-3">
-      <div class="grid-rows-3 md:tw-col-start-1 md:tw-col-end-5 tw-bg-indigo-50">
-        <div class="tw-pl-4 md:tw-pl-10 tw-mt-3 tw-text-lg tw-font-semibold" style="color: #ffa14e">
+    <div class="tw-grid md:tw-grid lg:tw-grid tw-grid-rows-1 md:tw-grid-rows-1 xl:tw-gap-4 tw-py-3">
+      <div class="lg:tw-col-span-6 lg:tw-col-start-1 lg:tw-col-end-5">
+        <div class="tw-pl-4 md:tw-pl-1 lg:tw-pl-8 tw-mt-3 tw-text-lg tw-font-semibold" style="color: #ffa14e">
           👋️ Hey User
         </div>
 
-        <div class="tw-pl-4 md:tw-pl-10 tw-mt-3 tw-text-2xl tw-font-bold">
+        <div class="tw-pl-4 md:tw-pl-1 lg:tw-pl-8 tw-mt-3 tw-text-2xl tw-font-bold">
           Your dummy dashboard
         </div>
-        <div class="md:tw-grid md:tw-cols-4 md:tw-mt-10 md:tw-gap-y-8 md:tw-gap-x-10 md:tw-h-96">
-<!--        <div class="row tw-px-8 tw-gap-y-4">-->
-          <div class="md:tw-col-span-3 md:tw-bg-gray-300">
-<!--          <div class="col-xs-12 tw-bg-gray-300">-->
-          Bar Chart
+        <div class="xl:tw-grid xl:tw-cols-4 md:tw-mt-6 md:tw-gap-y-8 md:tw-gap-x-8 md:tw-h-96">
+          <!--        <div class="row tw-px-8 tw-gap-y-4">-->
+          <div class="md:tw-col-span-3 md:tw-bg-gray-300 tw-rounded-3xl tw-h-96">
+            <!--          <div class="col-xs-12 tw-bg-gray-300">-->
+            Bar Chart
             <RadialBar />
           </div>
-          <div class="tw-col-start-1 tw-col-end-2 bg-amber-1">
-<!--          <div class="col-xs-6 bg-white">-->
+          <div class="tw-col-start-1 tw-col-end-2 bg-amber-1 tw-rounded-3xl">
+            <!--          <div class="col-xs-6 bg-white">-->
             Pie Chart
             <RadialBar />
           </div>
-<!--          <q-space/>-->
-          <div class="tw-col-start-2 tw-col-end-4 bg-purple-2">
-<!--          <div class="col-xs-6 bg-white">-->
+          <!--          <q-space/>-->
+          <div class="tw-col-start-2 tw-col-end-4 bg-purple-2 tw-rounded-3xl">
+            <!--          <div class="col-xs-6 bg-white">-->
             Bar Graph
             <RadialBar />
           </div>
@@ -46,25 +46,24 @@
               </div>
             </q-tabs>
           </div>
-
-<!--          separator-->
+          <!--          separator-->
           <q-separator class="tw-mt-2 tw-gray-100 tw-mx-10" />
 
           <q-scroll-area style="height:650px" :thumb-style="this.thumbStyle" >
-          <q-tab-panels v-model="tab" animated :style="{background: '#f9f9f9'}">
-            <q-tab-panel name="stats">
-              <div class="tw-flex tw-justify-center">Stats</div>
-            </q-tab-panel>
-            <q-tab-panel name="messages">
-              <div
-                v-for="item in messageCards"
-                :key="item.index"
-              >
-                <!-- message card component-->
-                <MessageCard />
-              </div>
-            </q-tab-panel>
-          </q-tab-panels>
+            <q-tab-panels v-model="tab" animated :style="{background: '#f9f9f9'}">
+              <q-tab-panel name="stats">
+                <div class="tw-flex tw-justify-center">Stats</div>
+              </q-tab-panel>
+              <q-tab-panel name="messages">
+                <div
+                  v-for="item in messageCards"
+                  :key="item.index"
+                >
+                  <!-- message card component-->
+                  <MessageCard />
+                </div>
+              </q-tab-panel>
+            </q-tab-panels>
           </q-scroll-area>
         </div>
       </div>

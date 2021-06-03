@@ -4,7 +4,7 @@
       <div class="tw-flex tw-items-center tw-justify-start tw-py-1 tw-gap-4 bg-grey-1">
         <div class="tw-mr-1">
           <q-btn
-            class="tw-left-2 md:tw-hidden"
+            class="tw-left-2 xl:tw-hidden"
             flat
             dense
             round
@@ -53,9 +53,10 @@
           </q-btn-dropdown>
         </div>
 
-          <div class="">
-<!--            <q-tab alert name="movies" icon="movie" label="Movies" style="color: red" />-->
-            <q-icon name="eva-bell-outline" class="" size="36px" color="" style="color: #828282" />
+          <div class="bg-grey-2 tw-rounded-xl">
+            <q-btn flat icon="eva-bell" size="18px" style="color: #828282">
+              <q-badge floating color="purple-3" />
+            </q-btn>
         </div>
 
           <div class="tw-w-1/4">

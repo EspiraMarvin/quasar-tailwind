@@ -12,7 +12,7 @@
           <div class="tw-flex no-wrap tw-pr-14">
             <div class="absolute-left">
               <q-avatar square class="tw-rounded-l-md object-cover tw-inset-y-0">
-                <img src="https://cdn.quasar.dev/img/avatar.png">
+                <q-img :src="imgUrl" alt="profile photo" />
               </q-avatar>
             </div>
             <div class="tw-pl-2">
@@ -38,7 +38,12 @@
 
 <script>
 export default {
-name: "ProfileTwo"
+name: "ProfileTwo",
+  data() {
+    return {
+      imgUrl: 'https://cdn.quasar.dev/img/avatar.png'
+    }
+  }
 }
 </script>
 
