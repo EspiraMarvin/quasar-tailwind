@@ -1,6 +1,6 @@
 <template>
   <div class="tw-py-2">
-    <div class="tw-h-35 tw-w-auto tw-mx-10 tw-rounded-2xl tw-bg-white hover:tw-bg-gray-200 tw-py-4 tw-px-1 md:tw-px-1 lg:tw-px-5 overflow-hidden tw-flex-grow-0 tw-flex-shrink-0">
+    <div class="tw-h-35 tw-w-auto tw-mx-8 md:tw-mx-4 lg:tw-mx-10 tw-rounded-2xl tw-bg-white hover:tw-bg-gray-200 tw-py-4 tw-px-1 md:tw-px-1 lg:tw-px-5 overflow-hidden tw-flex-grow-0 tw-flex-shrink-0">
       <div class="tw-flex tw-justify-between tw-items-center">
         <div class="tw-h-9 tw-w-10 tw-rounded-xl" :style="{backgroundColor: randomColor()}">
           <div class="tw-flex tw-justify-center tw-pt-2 tw-text-white">{{ userName | firstChar }}</div>
