@@ -1,6 +1,6 @@
 <template>
   <div>
-    <radialbar type="radialBar" :options="plotOptions" :series="series" height="280"></radialbar>
+    <Radialbar type="radialBar" :options="plotOptions" :series="series" height="280"></Radialbar>
   </div>
 </template>
 

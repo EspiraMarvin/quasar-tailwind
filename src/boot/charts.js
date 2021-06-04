@@ -9,4 +9,4 @@
 import Vue from 'vue'
 import VueApexCharts from "vue-apexcharts";
 
-Vue.component('radialbar', VueApexCharts)
+Vue.component('Radialbar', VueApexCharts)
