@@ -97,7 +97,7 @@
 <script>
 import commonMixins from "src/mixins/commonMixins";
 import Search from "components/Search";
-import ProfileTwo from "components/ProfileTwo";
+import ProfileTwo from "components/UserProfile";
 import EssentialLink from "components/navigations/EssentialLink";
 const linksData = [
   {
