@@ -1,15 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header>
-      <div class="tw-flex tw-items-center tw-justify-start tw-py-1 tw-gap-4 bg-grey-1">
+      <div class="tw-flex tw-items-center tw-justify-start tw-py-1 tw-gap-4 bg-white">
         <div class="tw-mr-1">
           <q-btn
-            class="tw-left-2 xl:tw-hidden"
+            class="tw-left-2 tw-text-gray-700 lg:tw-hidden"
             flat
             dense
             round
             icon="menu"
-            color="primary"
+            color=""
             aria-label="Menu"
             @click="leftDrawerOpen = !leftDrawerOpen"
         />
@@ -29,12 +29,13 @@
             class="tw-text-gray-700 tw-text-lg"
             label="Live"
             size="md"
+            style="opacity: 0.8"
           />
         </div>
 
           <div class="">
         <q-btn-dropdown
-            class="tw-font-normal tw-leading-5 tw-py-1 tw-text-gray-700 tw-bg-gray-100"
+            class="tw-font-normal tw-leading-5 tw-py-1 tw-text-gray-700 tw-bg-gray-100 tw-px-3"
             label="English"
             rounded
             unelevated
@@ -152,7 +153,12 @@ export default {
     return {
       image: 'https://cdn.quasar.dev/img/avatar2.jpg',
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksData,
+      data() {
+        return {
+          theme: ""
+        }
+      }
     }
   },
   methods: {
