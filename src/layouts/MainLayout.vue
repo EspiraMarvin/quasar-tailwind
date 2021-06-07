@@ -19,14 +19,14 @@
         </div>
 
         <div class="tw-flex tw-items-center tw-justify-start tw-w-1/2 tw-gap-16">
-          <div class="tw-w-30">
+          <div class="tw-w-24">
           <q-toggle
             :false-value="this.$q.dark.set(theme)"
             :true-value="this.$q.dark.set(theme)"
             v-model="theme"
             :icon="$q.dark.isActive ? '' : ''"
             color="green"
-            class="tw-text-gray-700 tw-text-lg"
+            class="tw-text-gray-700 tw-text-lg tw-font-light"
             label="Live"
             size="md"
             style="opacity: 0.8"
@@ -35,12 +35,13 @@
 
           <div class="">
         <q-btn-dropdown
-            class="tw-font-normal tw-leading-5 tw-py-1 tw-text-gray-700 tw-bg-gray-100 tw-px-3"
+            class="tw-font-light tw-leading-5 tw-text-gray-500 tw-bg-gray-100 tw-px-4 tw-py-1"
             label="English"
             rounded
+            outline
             unelevated
             no-caps
-            size="17px"
+            size="16px"
             dropdown-icon="expand_more"
         >
             <q-list separator bordered class="tw-font-light">
