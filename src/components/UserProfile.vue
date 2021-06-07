@@ -15,9 +15,9 @@
                 <q-img :src="imgUrl" alt="profile photo" />
               </q-avatar>
             </div>
-            <div class="tw-pl-2">
+            <div class="tw-pl-2 tw-text-md tw-text-gray-600">
                 User Name
-              <div class="tw-flex tw-items-center tw-justify-start tw-mt-1 tw-text-gray-400">
+              <div class="tw-flex tw-items-center tw-justify-start tw-mt-1 tw-text-gray-400 tw-text-sm">
                 user
               </div>
             </div>
