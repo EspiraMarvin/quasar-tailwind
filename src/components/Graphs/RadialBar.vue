@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <Radialbar type="radialBar" :options="plotOptions" :series="series" height="280"></Radialbar>
+  <div class="md:tw-pl-4 md:tw-pl-8 tw-pb-3 ">
+    <q-card flat bordered class="tw-rounded-3xl">
+      <q-card-section class="tw-px-4">Success Rate</q-card-section>
+      <div>
+        <Graph type="radialBar" :options="plotOptions" :series="series" height="280"></Graph>
+      </div>
+    </q-card>
   </div>
 </template>
 
@@ -9,6 +14,7 @@ export default {
   name: "RadialBar",
   data () {
     return {
+      showList: false,
       chart: {
         height: 280,
         type: "radialBar"

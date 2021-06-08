@@ -2,7 +2,7 @@
     <div>
       <q-btn-dropdown
         @click="onMainClick"
-        class="tw-font-normal tw-leading-5 tw-bg-gray-100 tw-rounded-r-md tw-text-gray-700 tw-pl-8"
+        class="tw-font-normal tw-leading-5 tw-bg-gray-50 tw-rounded-r-md tw-text-gray-700 tw-pl-8"
         size="16px"
         no-caps
         unelevated

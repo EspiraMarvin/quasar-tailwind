@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-py-2">
+  <div class="">
     <q-input
       placeholder="Search"
       class="tw-text-md"
