@@ -39,7 +39,7 @@
           </div>
           <div class="tw-col-start-1 tw-col-end-2 tw-rounded-3xl tw-mt-14">
             <!--          <div class="col-xs-6 bg-white">-->
-            <q-card flat class="tw-pl-4 md:tw-pl-4">
+            <q-card flat class="md:tw-pl-4">
               <RadialBar />
             </q-card>
           </div>
