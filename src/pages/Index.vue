@@ -13,8 +13,8 @@
         <div class="xl:tw-grid xl:tw-cols-6 md:tw-mt-6 md:tw-gap-y-8 md:tw-gap-x-8 md:tw-h-96">
           <!--        <div class="row tw-px-8 tw-gap-y-4">-->
 
-          <div class="tw-pl-4 tw-pt-3 tw--mb-2 md:tw-pl-8 tw-font-medium tw-text-gray-500">
-            <span class="">Last 30 Days</span>
+          <div class="tw-pl-4 tw-my-2 md:tw--mb-2 md:tw-pl-8 tw-font-medium tw-leading-4 tw-text-gray-500">
+            <span class="tw-text-base">Last 30 Days</span>
             <q-btn-dropdown
               class="tw-w-12 tw-ml-4 text-purple-14 bg-purple-1 tw-rounded-xl"
               label=""
@@ -31,7 +31,7 @@
             </q-btn-dropdown>
           </div>
 
-          <div class="md:tw-col-span-3 tw-rounded-3xl tw-h-96 tw-pt-0">
+          <div class="md:tw-col-span-3 tw-rounded-3xl tw-h-96">
             <!--          <div class="col-xs-12 tw-bg-gray-300">-->
             <q-card flat bordered class="tw-rounded-3xl md:tw-ml-10">
               <BarGraph />
