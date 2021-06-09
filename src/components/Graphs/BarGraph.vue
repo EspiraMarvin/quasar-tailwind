@@ -14,11 +14,34 @@ export default {
   data () {
     return {
       options: {
+        theme: {
+          monochrome: {
+            enabled: true,
+            color: '#EBB1FF',
+            // color: '#ecccff',
+            shadeTo: 'dark',
+            shadeIntensity: 0.65
+          }
+        },
         chart: {
-          id: 'vuechart-example'
+          id: 'vuechart-example',
+          animations: {
+            speed: 200
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        plotOptions: {
+          bar: {
+            distributed: false,
+            curve: true,
+            borderRadius: 2,
+            style: { borderRadius: '50px'},
+          }
         },
         xaxis: {
-          categories: ['Mar 1-7', 'Mar 8-14', 'Mar 15-21', 'Mar 22-28', 'Final wk']
+          categories: ['Mar 1-7', 'Mar 8-14', 'Mar 15-21', 'Mar 22-28', 'Final wk'],
         }
       },
       series: [{

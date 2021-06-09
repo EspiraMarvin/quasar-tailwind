@@ -1,7 +1,7 @@
 <template>
     <div class="tw-pt-1 tw-pb-6 md:tw-pb-4">
       <q-card flat bordered class="tw-rounded-3xl">
-        <q-card-section class="tw-px-4">Payment issues</q-card-section>
+        <q-card-section class="tw-px-4 tw-font-bold">Payment issues</q-card-section>
         <div>
           <Graph type="bar" :options="options" :series="series" height="244"></Graph>
         </div>

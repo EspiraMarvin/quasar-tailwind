@@ -19,8 +19,8 @@
               class="tw-ml-4 text-purple-14 bg-purple-1 tw-rounded-xl"
               label=""
               rounded
-              unelevated
               dense
+              unelevated
               size="16px"
               dropdown-icon="eva-arrow-down"
             >
@@ -46,16 +46,16 @@
           <!--          <q-space/>-->
           <div class="tw-col-start-2 tw-col-end-4 tw-rounded-3xl">
             <!--          <div class="col-xs-6 bg-white">-->
-            <q-card flat class="tw-mx-1 md:tw-ml-4 lg:tw-ml-8 xl:tw-ml-10  tw-pt-2">
+            <q-card flat class="tw-mx-1 md:tw-ml-4 lg:tw-ml-8 xl:tw-ml-10  tw-pt-1">
               <PaymentsGraph />
             </q-card>
           </div>
         </div>
       </div>
       <div class="md:tw-col-start-5 md:tw-col-end-7 md:tw-pl-4 lg:tw-pl-4 xl:tw-pl-28">
-        <div style="border-top-left-radius: 80px;" class="bg-grey-1">
+        <div style="border-top-left-radius: 80px;" class="bg-grey-1 rounded-tl-3xl">
 <!--/*        <div style="border-top-left-radius: 80px; background: #f9f9f9">*/-->
-          <div class="tw-flex tw-justify-center tw-pt-10 tw-px-8 tw-leading-5 tw-font-semibold">
+          <div class="tw-flex tw-justify-center tw-pt-16 tw-px-8 xl:tw-px-8 tw-leading-5 ">
             <q-tabs
               dense
               v-model="tab"
@@ -64,7 +64,7 @@
               active-color="grey-9"
             >
               <div class="tw-flex tw-gap-24 md:tw-gap-10 lg:tw-gap-24">
-                <q-tab name="stats" label="Stats" no-caps :ripple="false" class="tw--ml-2 md:tw--ml-4 lg:tw-ml-4" />
+                <q-tab name="stats" label="Stats" no-caps :ripple="false" class=" tw--ml-2" />
                 <q-tab name="messages" label="Messages" no-caps  :ripple="false" />
               </div>
             </q-tabs>
@@ -72,7 +72,7 @@
           <!--          separator-->
           <q-separator class="tw-mt-2 bg-grey-4 tw-mx-10" />
 
-          <q-scroll-area style="height:650px" :thumb-style="this.thumbStyle" >
+          <q-scroll-area style="height:690px" :thumb-style="this.thumbStyle" >
             <q-tab-panels v-model="tab" animated :style="{background: '#f9f9f9'}">
               <q-tab-panel name="stats">
                 <div class="tw-flex tw-justify-center">Stats</div>
