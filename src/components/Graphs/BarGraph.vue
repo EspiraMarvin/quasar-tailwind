@@ -1,8 +1,8 @@
 <template>
-  <div class="tw-rounded-3xl tw-pt-4 md:tw-mx-8">
-    <q-card-section class="tw-px-6 tw-w-auto">
+  <div class="tw-rounded-3xl tw-pt-4 md:tw-mx-2">
+    <q-card-section class="xl:tw-px-12">
       <div>
-        <Graph type="bar" :options="options" :series="series" height="350" class="" />
+        <Graph type="bar" :options="options" :series="series" height="300" class="tw-max-w-3xl" />
       </div>
     </q-card-section>
   </div>
@@ -24,7 +24,21 @@ export default {
       series: [{
         name: 'series-1',
         data: [50000, 120000, 120000, 120000, 180000]
-      }]
+      }],
+      fill: {
+        type: 'gradient',
+        gradient: {
+          shade: 'dark',
+          type: "horizontal",
+          shadeIntensity: 0.5,
+          gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
+          inverseColors: true,
+          opacityFrom: 1,
+          opacityTo: 1,
+          stops: [0, 50, 100],
+          colorStops: []
+        }
+      }
     }
   }
 }

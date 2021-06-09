@@ -3,20 +3,20 @@
 
     <div class="tw-grid md:tw-grid lg:tw-grid tw-grid-rows-1 md:tw-grid-rows-1 tw-gap-2 md:tw-gap-0 tw-py-3">
       <div class="md:tw-col-span-6 md:tw-col-start-1 md:tw-col-end-4 lg:tw-col-end-5">
-        <div class="tw-pl-4 md:tw-pl-1 lg:tw-pl-8 tw-mt-4 tw-text-lg tw-font-semibold" style="color: #ffa14e">
+        <div class="tw-pl-4 lg:tw-pl-8 xl:tw-pl-10 tw-mt-4 tw-text-lg tw-font-semibold" style="color: #ffa14e">
           👋️ Hey User
         </div>
 
-        <div class="tw-pl-4 md:tw-pl-1 lg:tw-pl-8 tw-mt-3 tw-text-2xl tw-font-bold">
+        <div class="tw-pl-4 lg:tw-pl-8 xl:tw-pl-10 tw-mt-3 tw-text-2xl tw-font-bold">
           Your dummy dashboard
         </div>
         <div class="xl:tw-grid xl:tw-cols-6 md:tw-mt-6 md:tw-gap-y-8 md:tw-gap-x-8 md:tw-h-96">
           <!--        <div class="row tw-px-8 tw-gap-y-4">-->
 
-          <div class="tw-pl-4 tw-my-2 md:tw--mb-2 md:tw-pl-8 tw-font-medium tw-leading-4 tw-text-gray-500">
+          <div class="tw-pl-4 lg:tw-pl-8 xl:tw-pl-10 tw-pt-4 tw-pb-3 xl:tw--mb-6 tw-font-medium tw-leading-4 tw-text-gray-500">
             <span class="tw-text-base">Last 30 Days</span>
             <q-btn-dropdown
-              class="tw-w-12 tw-ml-4 text-purple-14 bg-purple-1 tw-rounded-xl"
+              class="tw-ml-4 text-purple-14 bg-purple-1 tw-rounded-xl"
               label=""
               rounded
               unelevated
@@ -31,22 +31,22 @@
             </q-btn-dropdown>
           </div>
 
-          <div class="md:tw-col-span-3 tw-rounded-3xl tw-h-96">
+          <div class="md:tw-col-span-3 tw-rounded-3xl tw-h-96 ">
             <!--          <div class="col-xs-12 tw-bg-gray-300">-->
-            <q-card flat bordered class="tw-rounded-3xl md:tw-ml-10">
+            <q-card flat bordered class="tw-rounded-3xl tw-mx-1 md:tw-ml-4 lg:tw-ml-8 xl:tw-ml-10 ">
               <BarGraph />
             </q-card>
           </div>
-          <div class="tw-col-start-1 tw-col-end-2 tw-rounded-3xl tw-mt-14">
+          <div class="tw-col-start-1 tw-col-end-2 tw-rounded-3xl">
             <!--          <div class="col-xs-6 bg-white">-->
-            <q-card flat class="md:tw-pl-4">
+            <q-card flat class="tw-mx-1 md:tw-ml-4 lg:tw-ml-8 xl:tw-ml-10 tw-pt-2">
               <RadialBar />
             </q-card>
           </div>
           <!--          <q-space/>-->
-          <div class="tw-col-start-2 tw-col-end-4 tw-rounded-3xl tw-mt-2 md:tw-mt-14">
+          <div class="tw-col-start-2 tw-col-end-4 tw-rounded-3xl">
             <!--          <div class="col-xs-6 bg-white">-->
-            <q-card flat>
+            <q-card flat class="tw-mx-1 md:tw-ml-4 lg:tw-ml-8 xl:tw-ml-10  tw-pt-2">
               <PaymentsGraph />
             </q-card>
           </div>

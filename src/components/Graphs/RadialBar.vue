@@ -1,7 +1,7 @@
 <template>
-  <div class="md:tw-pl-4 md:tw-pl-8 tw-pb-3 ">
+  <div class="tw-pb-4">
     <q-card flat bordered class="tw-rounded-3xl">
-      <q-card-section class="tw-px-4">Success Rate</q-card-section>
+      <q-card-section class="tw-px-4 tw-py-4">Success Rate</q-card-section>
       <div>
         <Graph type="radialBar" :options="plotOptions" :series="series" height="280"></Graph>
       </div>

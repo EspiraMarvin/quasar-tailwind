@@ -1,5 +1,5 @@
 <template>
-    <div class="md:tw-pl-4 md:tw-pl-8 tw-pb-3">
+    <div class="tw-pt-1 tw-pb-6 md:tw-pb-4">
       <q-card flat bordered class="tw-rounded-3xl">
         <q-card-section class="tw-px-4">Payment issues</q-card-section>
         <div>
