@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-py-3 tw-mx-6 md:tw-mx-4 lg:tw-mx-10">
+  <div class="tw-py-3 tw-mx-6 md:tw-mx-4 lg:tw-mx-8 xl:tw-mx-12">
     <div class="tw-h-35 tw-rounded-2xl tw-bg-white hover:tw-bg-gray-200 tw-py-4 tw-px-4 md:tw-px-2 lg:tw-px-5 overflow-hidden tw-flex-grow-0 tw-flex-shrink-0">
       <div class="tw-flex tw-justify-between tw-items-center">
         <div class="tw-h-9 tw-w-10 tw-rounded-xl" :style="{backgroundColor: randomColor()}">

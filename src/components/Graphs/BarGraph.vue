@@ -26,7 +26,7 @@ export default {
         chart: {
           id: 'vuechart-example',
           animations: {
-            speed: 200
+            speed: 500
           }
         },
         dataLabels: {
